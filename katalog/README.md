@@ -1,6 +1,6 @@
 Link menuju aplikasi Heroku : https://tugas-2-pbp-astrid.herokuapp.com/katalog/
 
-![Bagan](/gambar_PBP/PBP.png)
+![Bagan](/katalog/gambar_PBP/PBP.png)
 
 
 Jelaskan kenapa menggunakan virtual environment? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment?
