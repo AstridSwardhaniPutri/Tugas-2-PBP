@@ -5,16 +5,14 @@ Contoh:
 ![image](https://user-images.githubusercontent.com/101729344/191658775-9e5b634b-40a7-471c-9d2d-cb6e617dd9a3.png)
 Selain itu, JSON juga dapat menyimpan data dalam bentuk array sehingga melakukan transfer data lebih mudah.
 
+
 **XML** atau eXtensible Markup Language menurut w3shools.com merupakan sebuah software dan hardware-independent tool untuk menyimpan dan membagikan data. XML bersifat self descriptive dengan adanya informasi pengirim dan penerima. XML menyimpan filenya dengan rapih karena terstruktur sehingga mudah dibaca oleh manusia tetapi tidak efisien. Contoh:
 ![image](https://user-images.githubusercontent.com/101729344/191659161-da3555a3-6b2f-4803-8183-0cf054afd829.png)
 
 
 **HTML** atau HyperText Markup Language bahasa standar untuk membuat web pages. HTML bisa membuat struktur dari sections, paaragraf, dan link dengan elemen dari HTML seperti tags atau attributes. Contoh:
 ![image](https://user-images.githubusercontent.com/101729344/191659258-1117287c-404d-4c16-aa8b-e5a4955a46bf.png)
-
-
-Perbedaan 
- 
+  
 Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
 
 Data delivery digunakan untuk mengirimkan data dari satu stack ke stack lainnya dengan berbagai tipe yaitu JSON, XML, dst. Data delivery ini bisa dilakukan dari developer ke developer atau dari daeveloper ke user. 
