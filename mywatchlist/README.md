@@ -1,6 +1,9 @@
 Jelaskan perbedaan antara JSON, XML, dan HTML!
+
 **Json** atau JavaScript Object Notation menurut w3shools.com merupakan sebuah format ringan untuk menyimpan dan mengirim data.JSON sering digunakan untuk mengirimkan data dari server ke web page.  
+
 **XML** atau eXtensible Markup Language menurut w3shools.com merupakan sebuah software dan hardware-independent tool untuk menyimpan dan membagikan data. XML bersifat self descriptive dengan adanya informasi pengirim dan penerima.
+
 **HTML** atau HyperText Markup Language bahasa standar untuk membuat web pages. HTML bisa membuat struktur dari sections, paaragraf, dan link dengan elemen dari HTML seperti tags atau attributes.
  
 Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
