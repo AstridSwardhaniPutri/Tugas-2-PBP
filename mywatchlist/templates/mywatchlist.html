@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+  <h1>{{nama}}'s Watchlist</h1>
+
+  <table>
+    <tr>
+      <th class ="header">Watched</th>
+      <th class ="header">Movie Title</th>
+      <th class ="header">Rating</th>
+      <th class ="header">Release Date</th>
+      <th class ="header">Review</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for film in list_mywatchlist %}
+    <tr>
+        <th>{{film.watched}}</th>
+        <th>{{film.title}}</th>
+        <th>{{film.rating}}</th>
+        <th>{{film.release_date}}</th>
+        <th>{{film.review}}</th>
+    </tr>
+  {% endfor %}
+  </table>
+  <p>View data in <a href="/mywatchlist/xml">XML</a>, <a href="/mywatchlist/json">JSON</a></p>
+
+ {% endblock content %}

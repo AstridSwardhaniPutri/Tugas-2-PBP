@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.ListFilm",
+        "pk":1,
+        "fields":{
+            "watched":true,
+            "title":"Crying in Fasilkom",
+            "rating": 4.5,
+            "release_date": "2022-10-20",
+            "review": "a great film for you to cry while ngoding"
+        }
+},
+{
+    "model":"mywatchlist.ListFilm",
+    "pk":2,
+    "fields":{
+        "watched":false,
+        "title":"500 days of Lab PBP",
+        "rating": 4.0,
+        "release_date": "2022-09-17",
+        "review": "What a great movie! It teach you about survivaliance in Fasilkom"
+        }
+    },
+    {
+        "model":"mywatchlist.ListFilm",
+    "pk":3,
+    "fields":{
+        "watched":false,
+        "title":"Resident Tepe",
+        "rating": 4.5,
+        "release_date": "2022-09-20",
+        "review": "An excellent one for action and thriller movie lover"
+        }
+    },
+    {
+        "model":"mywatchlist.ListFilm",
+        "pk":4,
+        "fields":{
+            "watched":true,
+            "title":"Decendent of Koh Leem",
+            "rating": 5.0,
+            "release_date": "2022-04-12",
+            "review": "Such an touching movie about generousity and kindness"
+            }
+    },
+    {
+        "model":"mywatchlist.ListFilm",
+        "pk":5,
+        "fields":{
+            "watched":true,
+            "title":"The Adventure of Dek Depe",
+            "rating": 3.0,
+            "release_date": "2022-01-12",
+            "review": "Not so intriguing movie"
+            }
+    },
+    {
+        "model":"mywatchlist.ListFilm",
+        "pk":6,
+        "fields":{
+            "watched":true,
+            "title":"Run from SDA",
+            "rating": 4.0,
+            "release_date": "2022-05-12",
+            "review": "One of the greatest movie ever "
+            }
+    },
+    {
+        "model":"mywatchlist.ListFilm",
+        "pk":7,
+        "fields":{
+            "watched":true,
+            "title":"One for the Money, Two for the Show",
+            "rating": 4.0,
+            "release_date": "2022-07-13",
+            "review": "I never was ready for the action so i watch the movie again"
+            }
+    },
+    {
+        "model":"mywatchlist.ListFilm",
+        "pk":8,
+        "fields":{
+            "watched":false,
+            "title":"Sleep",
+            "rating": 4.0,
+            "release_date": "2022-01-30",
+            "review": "A great movie about a student who haven't sleep for 20 days"
+            }
+    },
+    {
+        "model":"mywatchlist.ListFilm",
+        "pk":9,
+        "fields":{
+            "watched":true,
+            "title":"Crestfallen on the Landing",
+            "rating": 5.0,
+            "release_date": "2022-08-12",
+            "review": "Never seen this kind of movie before, an excellent one!"
+            }
+    },
+    {
+        "model":"mywatchlist.ListFilm",
+        "pk":10,
+        "fields":{
+            "watched":false,
+            "title":"Evermore",
+            "rating": 5.0,
+            "release_date": "2022-04-12",
+            "review": "If you get depressed, this movie will not cure you"
+            }
+    }
+]
