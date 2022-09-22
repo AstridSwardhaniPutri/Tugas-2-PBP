@@ -11,11 +11,13 @@ Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah p
 Data delivery digunakan untuk mengirimkan data dari satu stack ke stack lainnya dengan berbagai tipe yaitu JSON, XML, dst. Data delivery ini bisa dilakukan dari developer ke developer atau dari daeveloper ke user. 
 
 Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
-  1. Melakukan startapp mywatchlist
-  2. Menambahkan mywatchlist di settings.py
-  3. Menambahkan model mywatchlist ke model.py
+  1. Melakukan startapp mywatchlist di terminal dengan directory sesuai dengan repository
+  2. Menambahkan apps mywatchlist di settings.py 
+  3. Menambahkan model-model yang diperlukan seperti watched, dst ke model.py
   4. Menambahkan folder fixtures dengan isi initial file untuk load 10 data film
   5. Mengedit views.py untuk menambahkan fitur json dan xml yaitu show_json/xml dan return_xml/json_id
+  6. Menambahkan initial file json mywatchlist ke Procfile agar load data sampai ke Heroku
+  7. Melakukan deploy ke Heroku dengan normal
 
 Link Heroku mywatchlist:
 https://tugas-2-pbp-astrid.herokuapp.com/mywatchlist/
