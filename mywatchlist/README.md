@@ -4,6 +4,7 @@ Jelaskan perbedaan antara JSON, XML, dan HTML!
 **HTML** atau HyperText Markup Language bahasa standar untuk membuat web pages. HTML bisa membuat struktur dari sections, paaragraf, dan link dengan elemen dari HTML seperti tags atau attributes.
  
 Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
+
 Data delivery digunakan untuk mengirimkan data dari satu stack ke stack lainnya dengan berbagai tipe yaitu JSON, XML, dst. Data delivery ini bisa dilakukan dari developer ke developer atau dari daeveloper ke user. 
 
 Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
