@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Registrasi Akun</title>
+{% endblock meta %}
+
+{% block content %}  
+
+<div class = "new_task">
+    
+    <h1>Create Task</h1>  
+
+        <form method="POST" action="" >  
+            {% csrf_token %}  
+            <label for="Task Name">Task Name: </label> 
+            <input type="text" id="Task Name" name="Task Name" value="{{current_name}}">
+            <label for="Task Decription">Task Decription: </label> 
+            <input type="text" id="Task Decription" name="Task Decription" value="{{current_description}}">
+        </form>
+
+    {% if messages %}  
+        <ul>   
+            {% for message in messages %}  
+                <li>{{ message }}</li>  
+                {% endfor %}  
+        </ul>   
+    {% endif %}
+
+</div>  
+<button><a href="{% url 'todolist:show_todolist' %}">Add</a></button>
+{% endblock content %}
