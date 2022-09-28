@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
+<style>
+  body{
+    background-color:Pink;
+  }
 
+</style>
  {% block content %}
   <h1>{{nama}}'s todolist</h1>
 
@@ -8,16 +13,24 @@
       <th class ="header">Tanggal Pembuatan Task</th>
       <th class ="header">Judul Task</th>
       <th class ="header">Deskripsi Task</th>
+      <th class ="header">Status</th>
+      <th class ="header">Delete</th>
     </tr>
     {% comment %} Add the data below this line {% endcomment %}
-    {% for task in list_todolist %}
+    {% for task in task_list %}
     <tr>
         <th>{{task.date}}</th>
         <th>{{task.title}}</th>
-        <th>{{task.description}}</th>        
+        <th>{{task.description}}</th>
+        {% if task.is_finished  %}
+          <th><a href="update_task/{{task.pk}}">selesai</a></th>
+        {% else %}
+          <th><a href="update_task/{{task.pk}}">belum selesai</a></th>
+        {% endif %}
+        <th><a href="delete_task/{{task.pk}}">Delete Task</a></th>        
     </tr>
   {% endfor %}
   </table>
-  <button><a href="{% url 'todolist:create_task' %}">create_task</a></button>
+  <button><a href="{% url 'todolist:create_task' %}">Add task</a></button>
   <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
  {% endblock content %}

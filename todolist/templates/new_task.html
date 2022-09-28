@@ -12,11 +12,13 @@
 
         <form method="POST" action="" >  
             {% csrf_token %}  
-            <label for="Task Name">Task Name: </label> 
-            <input type="text" id="Task Name" name="Task Name" value="{{current_name}}">
-            <label for="Task Decription">Task Decription: </label> 
-            <input type="text" id="Task Decription" name="Task Decription" value="{{current_description}}">
+            <label for="Task_Name">Task Name: </label> 
+            <input type="text" id="Task_Name" name="Task_Name">
+            <label for="Task_Decription">Task Decription: </label> 
+            <input type="text" id="Task_Decription" name="Task_Description">
+            <button type="submit">add</button>
         </form>
+
 
     {% if messages %}  
         <ul>   
@@ -27,5 +29,4 @@
     {% endif %}
 
 </div>  
-<button><a href="{% url 'todolist:show_todolist' %}">Add</a></button>
 {% endblock content %}
