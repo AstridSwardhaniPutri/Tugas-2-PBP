@@ -19,7 +19,7 @@ def show_todolist(request):
     
     context = {
         'task_list': todolist,
-        'nama': 'Astrid',
+        'nama': user,
     }
 
     return render(request, "todolist.html", context)
