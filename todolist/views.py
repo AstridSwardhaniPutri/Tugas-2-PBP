@@ -1,6 +1,4 @@
 from django.http import HttpResponseRedirect
-from pydoc import describe
-from turtle import title
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
