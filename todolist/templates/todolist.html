@@ -1,36 +1,58 @@
-{% extends 'base.html' %}
-<style>
-  body{
-    background-color:Pink;
-  }
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+      body  {
+        background-image: url("https://wallpapercave.com/wp/wp10962137.png");
+        background-color: #cccccc;
+      }
+  </style>
+    
+  </head>
 
-</style>
- {% block content %}
-  <h1>{{nama}}'s todolist</h1>
+  <nav class="navbar navbar-light" style="background-color: #fde3e9;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">{{nama}}</a>
+     
+          
+          <a href="{% url 'todolist:logout' %}" class="btn btn-danger btn-sm">Logout</a>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-  <table>
-    <tr>
-      <th class ="header">Tanggal Pembuatan Task</th>
-      <th class ="header">Judul Task</th>
-      <th class ="header">Deskripsi Task</th>
-      <th class ="header">Status</th>
-      <th class ="header">Delete</th>
-    </tr>
+  <div class="container-fluid">
+    <h1>{{nama}}'s todolist</h1>
+  </div>
+    
     {% comment %} Add the data below this line {% endcomment %}
     {% for task in task_list %}
-    <tr>
-        <th>{{task.date}}</th>
-        <th>{{task.title}}</th>
-        <th>{{task.description}}</th>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{task.title}}</h5>
+        <p class="card-text">{{task.description}}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{task.date}}</li>
+      </ul>
+      <div class="card-body">
         {% if task.is_finished  %}
-          <th><a href="update_task/{{task.pk}}">selesai</a></th>
+          <a href="update_task/{{task.pk}}" class="btn btn-success btn-sm">✅ Selesai</a>
         {% else %}
-          <th><a href="update_task/{{task.pk}}">belum selesai</a></th>
+          <a href="update_task/{{task.pk}}"  class="btn btn-warning btn-sm">❌ Belum Selesai</a>
         {% endif %}
-        <th><a href="delete_task/{{task.pk}}">Delete Task</a></th>        
-    </tr>
+        <a href="delete_task/{{task.pk}}" class="btn btn-danger btn-sm" role="button">Delete Task</a>
+        
+      </div>
+    </div>
+    
   {% endfor %}
-  </table>
-  <button><a href="{% url 'todolist:create_task' %}">Add task</a></button>
-  <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
- {% endblock content %}
+  
+  <a href="{% url 'todolist:create_task' %}" class="btn btn-info btn-sm">Add task</a>
+
+</html>

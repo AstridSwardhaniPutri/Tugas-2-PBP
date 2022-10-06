@@ -1,10 +1,25 @@
-{% extends 'base.html' %}
+<!doctype html>
+<html lang="en">
 
 {% block meta %}
 <title>Registrasi Akun</title>
 {% endblock meta %}
 
-{% block content %}  
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body  {
+          background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9723000f-4669-44e5-88aa-fb06593dedcd/d5qjcvb-e665a6e1-297d-4b55-a718-b79c658db245.png/v1/fill/w_900,h_507,q_80,strp/cinnamoroll_wallpaper_by_shimmermint_d5qjcvb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTA3IiwicGF0aCI6IlwvZlwvOTcyMzAwMGYtNDY2OS00NGU1LTg4YWEtZmIwNjU5M2RlZGNkXC9kNXFqY3ZiLWU2NjVhNmUxLTI5N2QtNGI1NS1hNzE4LWI3OWM2NThkYjI0NS5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.x9G9gplCF9-NuhmvQVPhCmb96xAX-gzCJ7jOuJV1Tho");
+          background-color: #cccccc;
+        }
+    </style>
+        
+</head>
 
 <div class = "login">
     
@@ -16,7 +31,8 @@
                 {{ form.as_table }}  
                 <tr>  
                     <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
+                    <!-- <td><input type="submit" name="submit" value="Daftar"/></td> -->
+                    <td><button type="submit" class="btn btn-primary">Daftar</button></td>  
                 </tr>  
             </table>  
         </form>
@@ -30,5 +46,3 @@
     {% endif %}
 
 </div>  
-
-{% endblock content %}
